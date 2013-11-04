@@ -145,7 +145,7 @@
                     <navigationItem key="navigationItem" title="QuickView" id="VQ6-Ve-geC">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="DP5-gN-jHQ">
                             <connections>
-                                <segue destination="fPP-P3-MrC" kind="push" id="ar0-HH-gPM"/>
+                                <segue destination="x3r-di-jpE" kind="modal" id="NQW-NU-mEB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -154,7 +154,7 @@
             </objects>
             <point key="canvasLocation" x="1518" y="-327"/>
         </scene>
-        <!--Twg Add Item View Controller - QuickList-->
+        <!--Twg Add Item View Controller - QuickAdd-->
         <scene sceneID="g58-Qo-hal">
             <objects>
                 <viewController id="fPP-P3-MrC" customClass="twgAddItemViewController" sceneMemberID="viewController">
@@ -180,15 +180,15 @@
                             <constraint firstItem="YwI-uO-7tW" firstAttribute="leading" secondItem="7SF-R4-xSY" secondAttribute="leading" constant="15" id="v4K-E2-6LA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="QuickList" id="EF3-Fq-wj3">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6Od-bS-AfT">
+                    <navigationItem key="navigationItem" title="QuickAdd" id="Dzz-zg-iEY">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8mt-ls-0kf">
                             <connections>
-                                <segue destination="pL4-SC-eXt" kind="unwind" unwindAction="unwindtoList:" id="eEv-fg-gku"/>
+                                <segue destination="pL4-SC-eXt" kind="unwind" unwindAction="unwindtoList:" id="BdH-AW-YF5"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="bCV-bC-wJV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="KoV-5g-Wj9">
                             <connections>
-                                <segue destination="pL4-SC-eXt" kind="unwind" unwindAction="unwindtoList:" id="D9j-I0-sKB"/>
+                                <segue destination="pL4-SC-eXt" kind="unwind" unwindAction="unwindtoList:" id="mFb-eR-Il9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -217,21 +217,20 @@
             <point key="canvasLocation" x="992" y="-327"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="jJU-xi-5vy">
+        <scene sceneID="J8g-Jb-KAv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ckC-T8-hb0" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x3r-di-jpE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="LEm-Ga-hWb"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jXa-ce-s6d">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VGj-7P-cOQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="fPP-P3-MrC" kind="relationship" relationship="rootViewController" id="cBE-y0-7n2"/>
+                        <segue destination="fPP-P3-MrC" kind="relationship" relationship="rootViewController" id="5pW-uk-lEf"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yED-VE-jWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0c-ko-WBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1912" y="-327"/>
         </scene>
@@ -241,7 +240,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="ar0-HH-gPM"/>
-    </inferredMetricsTieBreakers>
 </document>
