@@ -9,10 +9,21 @@
 #import "twgAddItemViewController.h"
 
 @interface twgAddItemViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @end
 
 @implementation twgAddItemViewController
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if (sender != self.doneButton) return;
+    if (self.textField.text.length <= 0) return;
+    self.itemToDo = [[twgListItem alloc] init];
+    self.itemToDo.lItemName = self.textField.text;
+    self.itemToDo.itCompleted = FALSE;
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

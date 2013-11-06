@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "twgListItem.h"
 
 @interface twgAddItemViewController : UIViewController
+
+@property twgListItem *itemToDo;
 
 @end

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		019197741827066000C86E21 /* twgAddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019197731827066000C86E21 /* twgAddItemViewController.m */; };
-		0191977718270C7D00C86E21 /* twgTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0191977618270C7D00C86E21 /* twgTableViewController.m */; };
+		0128472E1829ED3D0004A192 /* twgListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0128472D1829ED3D0004A192 /* twgListItem.m */; };
+		01A77EA0182A063400A89CD7 /* twgAddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019197731827066000C86E21 /* twgAddItemViewController.m */; };
+		01A77EA1182A063A00A89CD7 /* twgTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0191977618270C7D00C86E21 /* twgTableViewController.m */; };
 		01F858451821F79F0013DEF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F858441821F79F0013DEF6 /* Foundation.framework */; };
 		01F858471821F79F0013DEF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F858461821F79F0013DEF6 /* CoreGraphics.framework */; };
 		01F858491821F79F0013DEF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F858481821F79F0013DEF6 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0128472C1829ED3D0004A192 /* twgListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twgListItem.h; sourceTree = "<group>"; };
+		0128472D1829ED3D0004A192 /* twgListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = twgListItem.m; sourceTree = "<group>"; };
 		019197721827065F00C86E21 /* twgAddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twgAddItemViewController.h; sourceTree = "<group>"; };
 		019197731827066000C86E21 /* twgAddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = twgAddItemViewController.m; sourceTree = "<group>"; };
 		0191977518270C7D00C86E21 /* twgTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twgTableViewController.h; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				01F858531821F79F0013DEF6 /* twgAppDelegate.h */,
 				01F858541821F79F0013DEF6 /* twgAppDelegate.m */,
 				01F858731821F8ED0013DEF6 /* Main.storyboard */,
+				0128472C1829ED3D0004A192 /* twgListItem.h */,
+				0128472D1829ED3D0004A192 /* twgListItem.m */,
 				0191977518270C7D00C86E21 /* twgTableViewController.h */,
 				0191977618270C7D00C86E21 /* twgTableViewController.m */,
 				01F858561821F79F0013DEF6 /* Images.xcassets */,
@@ -254,10 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0191977718270C7D00C86E21 /* twgTableViewController.m in Sources */,
-				019197741827066000C86E21 /* twgAddItemViewController.m in Sources */,
+				01A77EA1182A063A00A89CD7 /* twgTableViewController.m in Sources */,
+				01A77EA0182A063400A89CD7 /* twgAddItemViewController.m in Sources */,
 				01F858511821F79F0013DEF6 /* main.m in Sources */,
 				01F858551821F79F0013DEF6 /* twgAppDelegate.m in Sources */,
+				0128472E1829ED3D0004A192 /* twgListItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
